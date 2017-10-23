@@ -29,32 +29,29 @@ int main()
     if (lsA==lsB && lsB==lsC)
     {
         printf("It's a ragular triangle!\n");
-        return 0;
     }
 
     //直角三小形
-    if ((lsA!=lsB) &&((lsA*lsA+lsB*lsB) == lsC*lsC))
+    else if ((lsA!=lsB) &&((lsA*lsA+lsB*lsB) == lsC*lsC))
     {
         printf("It's a right angle triangle!\n");
-        return 0;
     }
 
     //等腰三角形
-    if ((lsA==lsB && lsA!=lsC)||(lsA!=lsB && lsB==lsC))
+    else if ((lsA==lsB && lsA!=lsC)||(lsA!=lsB && lsB==lsC))
     {
         printf("It's a isosceles triangle!\n");
-        return 0;
     }
 
     //等腰直角三角形
-    if (lsA==lsB && lsA^2+lsB^2==lsC^2)
+    else if (lsA==lsB && lsA^2+lsB^2==lsC^2)
     {
         printf("It's a right angle and isosceles triangle!\n");
-        return 0;
     }
     //一般三角形
-    else
+    else{
         printf("It's a general triangle!\n");
-
+    }
     system("pause");
+    return 0;
 }
