@@ -11,7 +11,7 @@ int main()
     printf("get long side A, B, C:\n");
     scanf("%d %d %d", &lsA, &lsB, &lsC);
 
-    if(lsA>lsB+lsC ||lsB>lsA+lsC||lsC>lsA+lsB)
+    if(lsA>=lsB+lsC ||lsB>=lsA+lsC||lsC>=lsA+lsB)
     {
         printf("Wrong!! It's not a triangle!\n");
         return 0;
